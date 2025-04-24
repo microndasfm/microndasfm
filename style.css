@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(microndas2.png);
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+
+.cont1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.img1{
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+    border: 3px solid  #be1f9c34;
+}
+
+p{ 
+    font-size: 190%;
+    color: rgb(234, 0, 255);
+    text-shadow: 2px 2px 2px #05dce4, -2px 2px #1eff00, 2px 2px 2px #be1f1f, -2px -2px 2px #000;
+}
+.lets{
+
+    position: absolute;
+    left: 65%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+video{
+    background-color: #be1f1f6b;
+    border-radius: 15%;
+}
