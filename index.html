@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MICRONDAS.FM</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Microndas FM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body>
-<div class="cont">
-<div class="cont1">
-<div class="lets"><p>MICRONDAS.FM</p></div>
-    <img src="microndas.jpg" class="img1" alt="">
-    <video controls autoplay muted loop>
-        <source src="https://radio01.ferozo.com/proxy/ra01001140?mp=/stream">
-    </video>
-</div>  
-</div> 
 
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Microndas FM</h1>
+    </header>
+
+    <main class="content">
+        <section class="station-image">
+            <img src="microndas.jpg" alt="Microndas FM Logo">
+            <figcaption>Transmitiendo 24/7</figcaption>
+        </section>
+
+        <section class="audio-player">
+            <h2>Escúchanos en vivo</h2>
+            <audio controls autoplay muted loop>
+                <source src="https://radio01.ferozo.com/proxy/ra01001140?mp=/stream" type="audio/mpeg">
+            </audio>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Microndas FM. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón flotante de Instagram -->
+    <a href="https://www.instagram.com/microndas.fm/" target="_blank" class="instagram-button" aria-label="Visítanos en Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
 </body>
 
 </html>
