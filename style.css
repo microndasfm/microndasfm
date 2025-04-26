@@ -1,42 +1,174 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
     padding: 0;
     background: url(microndas2.png);
-    font-family: "Roboto", sans-serif;
-
+    
+    color: #fff;
 }
 
-
-
-.cont1{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.site-header {
+    background-color: #00000096;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00ff00;
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.5);
+    text-shadow: 0 0 10px #00ff00;
+    position: relative;
 }
 
-
-.img1{
-    width: 120px;
-    height: 120px;
-    border-radius: 20%;
-    border: 3px solid  #be1f9c34;
+.site-title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: neon 1.5s ease-in-out infinite;
 }
 
-p{ 
-    font-size: 190%;
-    color: rgb(234, 0, 255);
-    text-shadow: 2px 2px 2px #05dce4, -2px 2px #1eff00, 2px 2px 2px #be1f1f, -2px -2px 2px #000;
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 10px #00ff00;
+    }
+    50% {
+        text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
+    }
+    100% {
+        text-shadow: 0 0 10px #00ff00;
+    }
 }
-.lets{
 
-    position: absolute;
-    left: 65%;
-    top: 40%;
-    transform: translate(-50%, -50%);
+.main-nav {
+    background-color: #00000096;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #00ff00;
 }
 
-video{
-    background-color: #be1f1f6b;
-    border-radius: 15%;
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: #ff00dd;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.main-nav a:hover {
+    color: #fff;
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #000000c9;
+    border: 2px solid #00ff00;
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.5);
+    border-radius: 10px;
+}
+
+.station-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #00ff00;
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.5);
+}
+
+.station-image figcaption {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.audio-player {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.audio-player h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+audio {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #111;
+}
+
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #00ff00;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 14px;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+/* Botón flotante de Instagram */
+.instagram-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00ff00;
+    color: #fff;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.instagram-button:hover {
+    transform: scale(1.1);
+    background-color: #78a104;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .site-title {
+        font-size: 24px;
+    }
+    .content {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .station-image figcaption {
+        font-size: 16px;
+    }
+    .site-footer p {
+        font-size: 12px;
+    }
+    .instagram-button {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
 }
